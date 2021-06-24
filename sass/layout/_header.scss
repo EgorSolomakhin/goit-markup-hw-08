@@ -1,0 +1,110 @@
+.header {
+    border: 1px solid #ECECEC;
+    background-color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.site-nav__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondery-text-color);
+    text-decoration: none;
+  
+        &:hover, 
+        &:focus {
+            color: var(--accent-color);
+}
+}
+
+.link-studio {
+    position: relative;
+
+    &::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+       
+    width: 100%;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+
+}
+}
+
+.auth-nav__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    text-decoration: none;
+
+       &:hover, 
+       &:focus {
+        color: var(--accent-color);
+}
+}
+
+.container-header,
+.header__container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav__item{
+
+    &:not(:last-child) {
+    margin-right: 50px;
+    }    
+}
+
+.auth-nav__link {
+    display: flex;
+    align-items: center;
+}
+
+.auth-nav__item {
+
+    &:not(:last-child) {
+    margin-right: 30px;
+    }    
+}
+
+.auth-nav-icon-envelope {
+    height: 12px;
+    width: 16px;
+    fill: currentColor;
+    margin-right: 10px;
+
+        .auth-nav__item:hover &,
+        .auth-nav__item:focus & {
+            fill: currentColor;
+}
+}
+
+.auth-nav-icon-smartphone {
+    height: 16px;
+    width: 10px;
+    fill: currentColor;
+    margin-right: 10px;
+
+        .auth-nav__item:hover &,
+        .auth-nav__item:focus & {
+            fill: currentColor;
+    
+}
+   
+}
+

@@ -1,0 +1,48 @@
+.title-photo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondery-text-color);
+    
+  }
+
+  .profession {
+      text-align: center;
+      margin-top: 10px;
+     
+  }
+
+  .section-team {
+      background-color: #F5F4FA;
+      
+  }
+
+  .list-team {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -50px;
+
+        & > .list-team__info {
+            flex-basis: calc(120 / 4 -30px);
+            margin-left: 30px;
+            margin-top: 50px;
+
+  }
+  }
+
+  .list-team__info {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      background: #FFFFFF;
+  }
+
+  .information-about-team {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 32px;
+      padding-right: 32px;
+  }

@@ -1,0 +1,36 @@
+@import "./utils/variables";
+
+// BASE 
+@import "./base/common";
+@import "./base/section";
+@import "./base/container";
+@import './base/img';
+@import './base/interactive';
+
+// COMPONENTS
+@import "./components/logo-header";
+@import "./components/social-list";
+@import "./components/overlay";
+@import "./components/logo-footer";
+@import "./components/list-filter-btn";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
+
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/main-section";
+@import "./layout/advantages-section";
+@import "./layout/example";
+@import "./layout/team-section";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/projects";
+
+
+
+
+
+
+
