@@ -1,16 +1,27 @@
 .title {
-    font-family: Roboto;
-    font-weight: 900;
-    font-style: normal;
+  font-family: Roboto;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color:#FFFFFF;
+}
+
+// 480+ и 768+
+@media screen and (min-width: 480px) {
+  .title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+// 1200+
+@media screen and (min-width: 1200px) {
+  .title {
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-   
-    
+  }
 }
 
 .title-button {
@@ -50,14 +61,71 @@
 }
 
 .main-section {
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)
     ),
-     url(../images/main-background-image.jpg);
+     url("../images/main-background-img-mobile.jpg");
   background-size: cover;
     
-  
 }
+
+// (2x и 0-767px)
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+ (min-resolution: 192dpi) and (max-width: 767px),
+ (min-resolution: 2dppx) and (max-width: 767px) {
+   .main-section {
+     background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)
+    ), url("../images/main-background-img-mobile@2x.jpg");
+   }
+ }
+
+// 768+ 
+@media screen and (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)
+    ), url("../images/main-background-img-tablet.jpg");
+  }  
+}
+
+// 2x и 768+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+ (min-resolution: 192dpi) and (min-width: 768px),
+ (min-resolution: 2dppx) and (min-width: 768px) {
+   .main-section {
+     background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)
+    ), url("../images/main-background-img-tablet@2x.jpg");
+   }
+ }
+
+//  1200+
+ @media screen and (min-width: 1200px) {
+  .main-section {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)
+    ), url("../images/main-background-image.jpg");
+  }  
+}
+
+// 2x и 1200+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+ (min-resolution: 192dpi) and (min-width: 768px),
+ (min-resolution: 2dppx) and (min-width: 768px) {
+   .main-section {
+     background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)
+    ), url("../images/main-background-image@2x.jpg");
+   }
+ }
