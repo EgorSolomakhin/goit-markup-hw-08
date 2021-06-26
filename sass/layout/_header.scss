@@ -11,10 +11,18 @@
     padding-bottom: 16px;
    
     &__mobile-menu-btn {
+        cursor: pointer;
+        line-height: 0;
         background-color: transparent;
         border: none;
         padding: 0;
+
+        &:focus,
+        &:hover {
+            fill: #2196F3;
+        }
     }
+
 
     &__mobile-menu {
         height: 40px;
@@ -164,4 +172,3 @@
 
 
 
-/
