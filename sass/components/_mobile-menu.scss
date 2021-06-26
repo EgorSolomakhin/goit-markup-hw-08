@@ -6,6 +6,12 @@
     height: 100vh;
     background-color: #FFFFFF;
     overflow: auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 
     &__close-btn {
         position: absolute;
@@ -16,12 +22,119 @@
         border: none;
         background-color: transparent;
         padding: 0;
+        line-height: unset;
       
+    }
+
+    &__close-btn:hover,
+    &__close-btn:focus {
+        cursor: pointer;
+        fill: var(--accent-color)
     }
 
     &__close-btn-icon {
         width: 40px;
         height: 40px;
     }
+
+    &__nav {
+        margin-left: 25px;
+    }
+
+    &__nav-link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: #212121;
+            
+            &:focus,
+            &:hover {
+                color: var(--accent-color);
+            }
+      
+    }   
+
+    &__nav-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__contacts-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__contacts-item-tel {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+
+        color: #2196F3;
+     
+    }
+
+    &__contacts-item-mail {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+
+        color: #757575;
+    }
+
+    &__contacts {
+        margin-top: 302px;
+        margin-left: 25px;
+    }
+
+    // Не решен вопрос по псевдоэлемену АВТЕР
+    &__social-list-link {
+        position: relative;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22x;
+        letter-spacing: 0.02em;
+
+        color: #2196F3;
+
+             &::after {
+                content: "";
+                display: block;
+
+                position: absolute;
+                top: 10px;
+                right: 55px;
+                width: 22px;
+                height: 1px;
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                transform: rotate(90deg);
+                
+            }
+                                
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: stretch;
+        align-items: center;
+
+        margin-top: 64px;
+        margin-left: 25px;         
+           
+    }
+
+    &__social-list-item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+}    
 }
+
+
 
